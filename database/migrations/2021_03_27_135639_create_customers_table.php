@@ -20,8 +20,9 @@ class CreateCustomersTable extends Migration
             $table->string('cpf');
             $table->string('cell');
             $table->string('email');
-            $table->string('adress');
+            $table->string('address');
             $table->string('note')->nullable();
+            $table->timestamps();
         });
     }
 
