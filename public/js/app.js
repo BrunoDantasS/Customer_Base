@@ -2281,6 +2281,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Home'
 });
@@ -28803,10 +28813,27 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h2", { staticClass: "head-two" }, [
-        _vm._v("Welcome to Customer Base")
-      ])
+    return _c("div", [
+      _c("div", { staticClass: "container" }, [
+        _c("h2", { staticClass: "head-two" }, [
+          _vm._v("Welcome to Customer Base")
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "relative flex items-top justify-center min-h-screen py-4 sm:pt-0"
+        },
+        [
+          _c("div", { staticClass: "max-w-6xl mx-auto sm:px-6 lg:px-8" }, [
+            _c("p", { staticClass: "head-two" }, [
+              _vm._v("Explore in the navigation bar")
+            ])
+          ])
+        ]
+      )
     ])
   }
 ]
