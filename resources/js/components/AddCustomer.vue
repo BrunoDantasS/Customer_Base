@@ -40,7 +40,7 @@
                     </div>
                     <div class="form-group">
                         <label for="note">Note</label>
-                        <textarea type="text" id="note" v-model="customer.note" class="form-control" placeholder="Enter Note" cols=60 rows="5" maxlength="300" wrap="hard"></textarea>
+                        <textarea type="text" id="note" v-model="customer.note" class="form-control" placeholder="Enter Note" cols=60 rows="2" maxlength="300" wrap="hard"></textarea>
                     </div>
 
                     <button class="btn btn-primary mt-4">Submit</button>

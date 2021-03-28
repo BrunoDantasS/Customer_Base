@@ -28333,7 +28333,7 @@ var render = function() {
                   id: "note",
                   placeholder: "Enter Note",
                   cols: "60",
-                  rows: "5",
+                  rows: "2",
                   maxlength: "300",
                   wrap: "hard"
                 },
