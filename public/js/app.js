@@ -28324,7 +28324,7 @@ var render = function() {
                   placeholder: "Enter Note",
                   cols: "60",
                   rows: "5",
-                  maxlength: "500",
+                  maxlength: "300",
                   wrap: "hard"
                 },
                 domProps: { value: _vm.customer.note },
