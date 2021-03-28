@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2 class="head-two">Home Page</h2>
+        <h2 class="head-two">Welcome to Customer Base</h2>
     </div>
 </template>
 

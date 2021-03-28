@@ -28804,7 +28804,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
-      _c("h2", { staticClass: "head-two" }, [_vm._v("Home Page")])
+      _c("h2", { staticClass: "head-two" }, [
+        _vm._v("Welcome to Customer Base")
+      ])
     ])
   }
 ]
