@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2 class="text-center p-2 text-white bg-primary mt-5">Add Customer</h2>
+        <h2 class="text-center p-2 text-white bg-primary mt-5">Edit Customer</h2>
 
         <div class="card-body">
             <div class="col-md-6 offset-md-3">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="form-group">
                         <label for="note">Note</label>
-                        <textarea type="text" id="note" v-model="customer.note" class="form-control" placeholder="Enter Note" cols=60 rows="5" maxlength="500" wrap="hard"></textarea>
+                        <textarea type="text" id="note" v-model="customer.note" class="form-control" placeholder="Enter Note" cols=60 rows="2" maxlength="500" wrap="hard"></textarea>
                     </div>
 
                     <button class="btn btn-primary mt-4">Submit</button>

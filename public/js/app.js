@@ -28530,7 +28530,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("h2", { staticClass: "text-center p-2 text-white bg-primary mt-5" }, [
-      _vm._v("Add Customer")
+      _vm._v("Edit Customer")
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "card-body" }, [
@@ -28758,7 +28758,7 @@ var render = function() {
                   id: "note",
                   placeholder: "Enter Note",
                   cols: "60",
-                  rows: "5",
+                  rows: "2",
                   maxlength: "500",
                   wrap: "hard"
                 },

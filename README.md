@@ -15,3 +15,7 @@ Sistema web para cadastro de clientes usando Vue.js para o frontend, PHP Laravel
 5) Executar `php artisan key:generate`
 6) Executar `php artisan migrate`
 7) Executar `php artisan serve`
+
+<br>
+
+![Gif Demo](img/DemoCustomerBase.gif)
