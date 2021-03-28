@@ -20,11 +20,17 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//Save Customer
+Route::post('save_customer', [CustomerController::class, 'saveCustomer']);
+
 //Get Customers
 Route::get('get_customers', [CustomerController::class, 'getCustomers']);
 
-//Save Customer
-Route::post('save_customer', [CustomerController::class, 'saveCustomer']);
+//Get Customer Detail
+Route::get('get_customer/{id}', [CustomerController::class, 'getCustomerDetail']);
+
+//Update Customer
+Route::post('update_customer/{id}', [CustomerController::class, 'updateCustomer']);
 
 //Delete Customer
 Route::delete('delete_customer/{id}', [CustomerController::class, 'deleteCustomer']);

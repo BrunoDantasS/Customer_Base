@@ -28,10 +28,17 @@
                     <td scope="row">{{ customer.address }}</td>
                     <td scope="row">{{ customer.note }}</td>
 
-                    <td><button class="btn btn-danger btn-sm" @click.prevent="deleteCustomer(customer.id)">
-                        Delete
-                    </button></td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" @click.prevent="deleteCustomer(customer.id)">
+                            Delete
+                        </button>
+                    </td>
 
+                    <td>
+                        <router-link :to="{ name: 'get_customer', params: {id: customer.id} }" class="btn btn-primary btn-sm">
+                            Edit
+                        </router-link>
+                    </td>
                 </tr>
             </tbody>
         </table>

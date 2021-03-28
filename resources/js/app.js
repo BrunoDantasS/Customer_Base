@@ -8,6 +8,7 @@ import App from './App.vue';
 import Home from '../js/components/Home.vue';
 import CustomerList from '../js/components/CustomerList.vue';
 import AddCustomer from '../js/components/AddCustomer';
+import EditCustomer from '../js/components/EditCustomer';
 
 //Sweet alert 2
 import VueSweetAlert2 from 'vue-sweetalert2';
@@ -28,14 +29,19 @@ const routes = [
         component: Home
     },
     {
-        name: '/customers',
+        name: 'customers',
         path: '/customers',
         component: CustomerList
     },
     {
-        name: '/add_customer',
+        name: 'add_customer',
         path: '/add_customer',
         component: AddCustomer
+    },
+    {
+        name: 'get_customer',
+        path: '/get_customer/edit/:id?',
+        component: EditCustomer
     }
 ]
 

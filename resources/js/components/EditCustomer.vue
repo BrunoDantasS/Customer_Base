@@ -4,7 +4,7 @@
 
         <div class="card-body">
             <div class="col-md-6 offset-md-3">
-                <form id="validateForm" @submit.prevent="saveCustomer" enctype="multipart/form-data" novalidate>
+                <form id="validateForm" @submit.prevent="updateCustomer" enctype="multipart/form-data" novalidate>
 
                     <div class="alert alert-danger" v-if="errors.length">
                         <ul class="mb-0">
@@ -68,7 +68,14 @@
             }
         },
         methods: {
-            saveCustomer() {
+            loadData() {
+                let url = this.url + `/api/get_customer/${this.$route.params.id}`;
+                this.axios.get(url).then((response) => {
+                    this.customer = response.data;
+                    console.log(this.contact);
+                });
+            },
+            updateCustomer() {
                 this.errors = [];
                 if (!this.customer.name) {
                     this.errors.push('Name is required.');
@@ -98,17 +105,13 @@
                     formData.append('email', this.customer.email);
                     formData.append('address', this.customer.address);
                     formData.append('note', this.customer.note);
-                    let url = this.url + '/api/save_customer';
+                    let url = this.url + `/api/update_customer/${this.$route.params.id}`;
                     this.axios.post(url, formData).then((response) => {
                         if (response.status) {
-                            document.getElementById('name').value = '';
-                            document.getElementById('birth_date').value = '';
-                            document.getElementById('cpf').value = '';
-                            document.getElementById('cell').value = '';
-                            document.getElementById('email').value = '';
-                            document.getElementById('address').value = '';
-                            document.getElementById('note').value = '';
                             this.$utils.showSuccess('success', response.message);
+                            this.$router.push({
+                                name: '/'
+                            });
                         } else {
                             this.$utils.showErrr('Error', response.message);
                         }
@@ -118,9 +121,11 @@
                 }
             }
         },
+        created() {
+            this.loadData();
+        },
         mounted: function() {
-            console.log('Add Customer Component Loaded');
+            console.log('Edit Customer Component Loaded');
         }
-
     }
 </script>
