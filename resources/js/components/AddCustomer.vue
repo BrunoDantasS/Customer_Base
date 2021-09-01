@@ -110,7 +110,7 @@
                             document.getElementById('note').value = '';
                             this.$utils.showSuccess('success', response.message);
                         } else {
-                            this.$utils.showErrr('Error', response.message);
+                            this.$utils.showError('Error', response.message);
                         }
                     }).catch(error => {
                         this.errors.push(error.response.data.error)

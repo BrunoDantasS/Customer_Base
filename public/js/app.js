@@ -1994,7 +1994,7 @@ __webpack_require__.r(__webpack_exports__);
 
             _this.$utils.showSuccess('success', response.message);
           } else {
-            _this.$utils.showErrr('Error', response.message);
+            _this.$utils.showError('Error', response.message);
           }
         })["catch"](function (error) {
           _this.errors.push(error.response.data.error);
@@ -2246,7 +2246,7 @@ __webpack_require__.r(__webpack_exports__);
               name: '/'
             });
           } else {
-            _this2.$utils.showErrr('Error', response.message);
+            _this2.$utils.showError('Error', response.message);
           }
         })["catch"](function (error) {
           _this2.errors.push(error.response.data.error);
