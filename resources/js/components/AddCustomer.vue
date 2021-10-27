@@ -20,15 +20,15 @@
                     </div>
                     <div class="form-group">
                         <label for="birth_date">Birth Date</label>
-                        <input type="date" id="birth_date" v-model="customer.birth_date" class="form-control" placeholder="Enter Birth Date">
+                        <input type="text" id="birth_date" v-model="customer.birth_date" class="form-control" v-mask="'##/##/####'" placeholder="dd/mm/yyyy">
                     </div>
                     <div class="form-group">
                         <label for="cpf">CPF</label>
-                        <input type="text" id="cpf" v-model="customer.cpf" class="form-control" placeholder="Enter CPF">
+                        <input type="text" id="cpf" v-model="customer.cpf" class="form-control" v-mask="'###.###.###-##'" placeholder="000.000.000-00">
                     </div>
                     <div class="form-group">
                         <label for="cell">Cell</label>
-                        <input type="tel" id="cell" v-model="customer.cell" class="form-control" placeholder="Enter Cell">
+                        <input type="tel" id="cell" v-model="customer.cell" class="form-control" v-mask="'(##)#####-####'" placeholder="(00)00000-0000">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
